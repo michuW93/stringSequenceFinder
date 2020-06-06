@@ -14,16 +14,16 @@ public class Main {
     }
 
     private static void findSequenceInString(String substring, String wholeString) {
-        ArrayList<Integer> occurrenceArr = new ArrayList<>();
+        ArrayList<Integer> occurences = new ArrayList<>();
         int substrLength = substring.length();
         int strLength = wholeString.length();
 
         for (int i = 0; i < strLength - substrLength + 1; i++) {
             if (wholeString.regionMatches(false, i, substring, 0, substrLength)) {
-                occurrenceArr.add(i);
+                occurences.add(i);
             }
         }
-        displayResult(substrLength, occurrenceArr);
+        displayResult(substrLength, occurences);
     }
 
     private static void displayResult(int substrLength, ArrayList<Integer> occurrenceArr) {
