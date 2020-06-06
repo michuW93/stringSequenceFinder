@@ -26,10 +26,10 @@ public class Main {
         displayResult(substrLength, occurences);
     }
 
-    private static void displayResult(int substrLength, ArrayList<Integer> occurrenceArr) {
-        for (int i = 0; i < occurrenceArr.size(); i++) {
-            int startPosition = occurrenceArr.get(i);
-            int endPosition = occurrenceArr.get(i) + substrLength - 1;
+    private static void displayResult(int substrLength, ArrayList<Integer> occurences) {
+        for (int i = 0; i < occurences.size(); i++) {
+            int startPosition = occurences.get(i);
+            int endPosition = occurences.get(i) + substrLength - 1;
             System.out.println(startPosition + " " + endPosition);
         }
     }
